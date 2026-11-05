@@ -1,0 +1,14 @@
+{
+  "name": "sip-mutual-fund-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack SIP and mutual fund planning calculator",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
